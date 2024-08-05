@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input 태그 연습</title>
+</head>
+<body>
+    <!-- 
+        input 태그 구조
+        <input 
+            type="입력받을 값의 종류"
+            value="기본값"
+            name="입력받은 값의 이름표로 사용할 값"
+        >
+    -->
+    <form>
+        <input type="text" name="username" value="이름을 입력하세요"><br>
+        <!-- placeholder는 입력란에 메세지를 출력합니다
+            해당 메세지는 값을 입력할때 사라집니다
+            required는 필수 입력값을 지정합니다
+            submit할때 required 속성이 있는 input에 값이 없으면 입력해달라고 요청됩니다
+        -->
+        <input type="text" name="username" placeholder="이름을 입력하세요" required><br>
+        <input type="password" name="userpw"><br>
+        <input type="number" min="0" max="10"><br>
+        <input type="file"><br>
+        <input type="button" value="버튼"><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <!-- <input type="datetime"> 은 그냥 text 타입처럼 나옴 -->
+        <input type="datetime-local"><br>
+        <!-- form 안에 있는 input 입력값들을 리셋 -->
+        <input type="reset" value="리셋"><br>
+        <input type="submit" value="전송하기"><br>
+        <label>남성
+            <input type="radio" name="gender" value="M">
+        </label>
+        <label>여성
+            <input type="radio" name="gender" value="F">
+        </label>
+        <label>선택안함
+            <input type="radio" name="gender" value="None">
+        </label>
+        <br>
+        <label>java
+            <input type="radio" name="skill" value="java">
+        </label>
+        <label>jsp
+            <input type="radio" name="skill" value="jsp">
+        </label>
+        <label>html
+            <input type="radio" name="skill" value="html">
+        </label>
+        <label>css
+            <input type="radio" name="skill" value="css">
+        </label>
+        <label>js
+            <input type="radio" name="skill" value="js">
+        </label>
+        <br><hr>
+        <label>java
+            <input type="checkbox" name="skill" value="java">
+        </label>
+        <label>jsp
+            <input type="checkbox" name="skill" value="jsp">
+        </label>
+        <label>html
+            <input type="checkbox" name="skill" value="html">
+        </label>
+        <label>css
+            <input type="checkbox" name="skill" value="css">
+        </label>
+        <label>js
+            <input type="checkbox" name="skill" value="js">
+        </label>
+        <hr>
+        <select name="skill">
+            <option value="1">JAVA</option>
+            <option value="2">JSP</option>
+            <option value="3">HTML5</option>
+            <option value="4">CSS3</option>
+            <option value="5">ES6</option>
+        </select>
+    </form>
+    <hr>
+    <form>
+        아이디 : <input type="text" name="userid" placeholder="영문자로 4자 이상 작성해주세요"><br>
+        비번 : <input type="password" name="userpw"><br>
+        이메일 : <input type="email" name="email"><br>
+        이름 : <input type="text" name="username"><br>
+        나이 : <input type="text" name="age"><br>
+        성별 : 
+        <label>남성<input type="radio" name="gender" value="M"></label>
+        <label>여성<input type="radio" name="gender" value="F"></label>
+        <label>비공개<input type="radio" name="gender" value="N"></label>
+        <br>
+        취미 : 
+        <label>낚시<input type="checkbox" name="hobby" value="낚시"> </label>
+        <label>영화<input type="checkbox" name="hobby" value="영화"> </label>
+        <label>음감<input type="checkbox" name="hobby" value="음감"> </label>
+        <label>독서<input type="checkbox" name="hobby" value="독서"> </label>
+        <label>축구<input type="checkbox" name="hobby" value="축구"> </label>
+        <label>야구<input type="checkbox" name="hobby" value="야구"> </label>
+        <br>
+        <input type="reset" value="취소하기">
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+</html>
