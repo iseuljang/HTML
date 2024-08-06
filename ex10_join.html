@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 폼</title>
+</head>
+<body>
+    <form>
+        아이디 : <input type="text" name="userid" placeholder="영문자로 4자 이상 작성해주세요" required><br>
+        비번 : <input type="password" name="userpw" required><br>
+        이메일 : <input type="email" name="email" required><br>
+        이름 : <input type="text" name="username" required><br>
+        나이 : <input type="text" name="age"><br>
+        성별 : 
+        <label>남성<input type="radio" name="gender" value="M"></label>
+        <label>여성<input type="radio" name="gender" value="F"></label>
+        <label>비공개<input type="radio" name="gender" value="N" checked></label>
+        <!-- radio, checkbox 등의 input에 기본적으로 선택 상태로 만들어주는 속성 키워드 = checked -->
+        <br>
+        취미 : 
+        <label>낚시<input type="checkbox" name="hobby" value="낚시"> </label>
+        <label>영화<input type="checkbox" name="hobby" value="영화"> </label>
+        <label>음감<input type="checkbox" name="hobby" value="음감"> </label>
+        <label>독서<input type="checkbox" name="hobby" value="독서"> </label>
+        <label>축구<input type="checkbox" name="hobby" value="축구"> </label>
+        <label>야구<input type="checkbox" name="hobby" value="야구"> </label>
+        <br>
+        <input type="reset" value="취소하기">
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+</html>
