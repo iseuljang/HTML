@@ -82,7 +82,17 @@
             <tr>
                 <td colspan="2" style="text-align: center;">
                     <input type="submit" value="가입완료">
-                    <input type="reset" value="취소">
+                    <input type="reset" value="취소"><br>
+                    <!-- form 내부에 작성된 button 태그는 기본 type이 submit 
+                        => input type='submit'과 동일하게 동작
+                        단순한 버튼으로 동작하게 하려면 
+                        button type='button'
+                    -->
+                    <button>버튼</button>
+                    <button type="menu">메뉴버튼</button>
+                    <button type="submit">submit버튼</button>
+                    <button type="reset">reset버튼</button>
+                    <button type="button">버튼</button>
                 </td>
             </tr>
         </table>
